@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -33,9 +35,9 @@
 }
 
 .logo {
-  width: 160px; /* Aumentado para hacerlo más grande */
-  height: auto; /* Mantener proporciones */
-  object-fit: contain; /* Ajustar imagen correctamente */
+  width: 160px;
+  height: auto;
+  object-fit: contain;
 }
 
 .contact-info {
@@ -57,61 +59,81 @@
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-now:hover {
-  background-color: #b3c7ff; /* Cambia el color de fondo al pasar el mouse */
-  color: #030303; /* Cambia el color del texto */
-  transform: scale(1.05); /* Levemente agranda el botón */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+  background-color: #b3c7ff;
+  color: #030303;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-    padding: 15px 20px; /* Reducir el padding */
+    flex-direction: column;
+    padding: 15px 20px;
   }
 
   .nav-menu {
-    flex-direction: column; /* Cambia el menú a columna */
-    align-items: center; /* Centrar los elementos en el menú */
-    gap: 10px; /* Espacio reducido entre los enlaces */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .logo {
-    width: 120px; /* Reducir el tamaño de la logo en pantallas pequeñas */
+    width: 120px;
   }
 
   .contact-info {
-    flex-direction: column; /* Coloca la información de contacto en columna */
-    align-items: center; /* Centrar elementos de contacto */
-    gap: 10px; /* Espacio reducido entre elementos de contacto */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .button-now {
-    width: 100%; /* Hacer que el botón ocupe el 100% del ancho */
-    padding: 15px; /* Reducir padding para un botón más pequeño */
-    font-size: 1rem; /* Ajustar tamaño de fuente */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho en pantallas pequeñas */
+    padding: 12px; /* Reduce ligeramente el padding */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    text-align: center; /* Centra el texto dentro del botón */
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 10px 15px; /* Menos padding en pantallas muy pequeñas */
+    padding: 10px 15px;
   }
 
   .nav-link {
-    font-size: 0.9rem; /* Reducir el tamaño de la fuente de los enlaces */
-    padding: 8px 16px; /* Reducir el padding */
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 
   .logo {
-    width: 100px; /* Reducir aún más el tamaño de la logo */
+    width: 100px;
   }
 
-  .phone {
-    font-size: 0.9rem; /* Reducir el tamaño de la fuente del teléfono */
+  .button-now {
+    padding: 10px; /* Ajuste adicional para pantallas muy pequeñas */
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente para mejor visibilidad */
   }
 }
+
+/* Para pantallas extremadamente pequeñas (menos de 320px) */
+@media (max-width: 320px) {
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .button-now {
+    padding: 8px; /* Reduce aún más el padding */
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
