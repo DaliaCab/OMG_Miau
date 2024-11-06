@@ -220,4 +220,7 @@
     width: 200px;
     height: 200px;
   }
+  .hover-text{
+    font-size: 16px;
+  }
 }

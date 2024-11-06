@@ -5,11 +5,11 @@
   text-align: center;
 }
 
-
 .content {
   display: flex;
   align-items: center; /* Alinear verticalmente el contenido */
   justify-content: center; /* Centrar el contenido horizontalmente */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .main-image {
@@ -42,7 +42,8 @@
 
 .session-section h2 {
   color: #222121;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: 'Itim', cursive;
   margin-bottom: 10px;
 }
 
@@ -86,7 +87,7 @@
 .header-icon {
   width: 140px; /* Tamaño del ícono */
   height: 100px; /* Tamaño del ícono */
-  margin: -130px auto 0; /* Mueve el ícono más arriba y lo centra */
+  margin: -0px auto 20px; /* Baja el ícono más abajo */
   display: block; /* Asegúrate de que el ícono se comporta como un bloque para centrarse */
 }
 
@@ -97,7 +98,7 @@
   margin: 0;                    
   padding: 0;                   
   height: 400px;                
-  overflow: hidden;             /* Oculta cualquier contenido adicional */
+  overflow: hidden;             
 }
 
 .imageSession {
@@ -110,14 +111,15 @@
   padding: 0;                    
 }
 
-
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .content {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos */
-    text-align: center; /* Centra el texto */
+    flex-direction: column; /* Cambiar a columna cuando se reduzca el tamaño */
+    align-items: center; /* Centrar los elementos */
+  }
+
+  .header-icon {
+    visibility: hidden; /* Hace el icono invisible pero conserva su espacio */
   }
 
   .main-image {
@@ -134,6 +136,7 @@
   .session-section h1,
   .session-section h3 {
     font-size: 2rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    margin-bottom: 20px; /* Reduce el espacio debajo de los títulos */
   }
 
   .highlights {
@@ -149,17 +152,18 @@
     width: 30px; /* Reduce el tamaño de las imágenes en las tarjetas */
     height: 30px;
   }
-
-  .header-icon {
-    width: 100px; /* Ajusta el tamaño del ícono */
-    height: auto; /* Mantener proporciones */
-  }
 }
 
 @media (max-width: 480px) {
+  .content {
+    flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
+    align-items: center;
+  }
+
   .session-section h1,
   .session-section h3 {
     font-size: 1.5rem; /* Reduce aún más el tamaño de fuente */
+    margin-bottom: 15px; /* Ajusta el margen debajo del título */
   }
 
   .highlight {
@@ -172,5 +176,31 @@
     height: 25px;
   }
 
+  .text-section,
+  .main-image {
+    max-width: 100%;
+    margin: 0;
+  }
 }
+
+@media (max-width: 320px) {
+  .session-section h1,
+  .session-section h3 {
+    font-size: 1.2rem; /* Tamaño de fuente reducido para pantallas muy pequeñas */
+    margin-bottom: 10px; /* Reducir el espacio debajo del título */
+  }
+
+  .highlight {
+    width: 50px; /* Ajustar tamaño de tarjeta para pantallas muy pequeñas */
+    padding: 8px;
+  }
+
+  .highlight img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
 

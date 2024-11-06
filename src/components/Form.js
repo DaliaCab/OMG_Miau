@@ -110,7 +110,7 @@ const Form = ({ breeds, setBreeds }) => {
             .cat-card-name { font-weight: bold; margin: 10px 0; }
           </style>
         </head>
-        <body onload="window.print(); window.close();">
+        <body onload="window.print();">
           ${printContent}
         </body>
       </html>

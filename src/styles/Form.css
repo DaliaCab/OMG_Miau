@@ -2,7 +2,7 @@
 
 /* Contenedor de la imagen de la pata del gato */
 .imagenForm {
-  margin-left: -1300px;
+  margin-left: -1500px;
   left: 0;
   z-index: 1;
   margin-top: -80px;
@@ -242,6 +242,10 @@
   .cat-card {
     width: 200px;
   }
+  .progress-bar-container {
+    margin-top: -100px;
+    width: 90%;
+  }
 }
 
 /* Para pantallas pequeñas (móviles y pantallas menores a 768px) */
@@ -253,6 +257,7 @@
     font-size: 1.2em;
   }
   .progress-bar-container {
+    margin-top: 0%;
     width: 90%;
   }
   .question-form, .cat-card-container, .retake-button-container {
@@ -265,5 +270,10 @@
   .cat-card {
     width: 100%;
     margin: 0;
+  }
+  .answer-button{
+    padding: 10px 15px;
+    font-size: 1em;
+    margin-bottom: 10px;
   }
 }
