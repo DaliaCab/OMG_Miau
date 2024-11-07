@@ -131,6 +131,8 @@
   .text-section {
     margin-left: 0; /* Elimina margen izquierdo */
     max-width: 100%; /* Permite que el texto ocupe todo el ancho disponible */
+    margin-left:20px;
+    margin-right: 20px;
   }
 
   .session-section h1,

@@ -64,7 +64,7 @@ describe("Form Component", () => {
 
     // Check that the recommendations are rendered
     await waitFor(() => {
-      expect(screen.getByText((content, element) => content.includes("Tus mejores compañeros podrían ser:"))).toBeInTheDocument();
+      expect(screen.getByText((content) => content.includes("Tus mejores compañeros podrían ser:"))).toBeInTheDocument();
     });
 
     // Check that the recommendations contain the mock breeds

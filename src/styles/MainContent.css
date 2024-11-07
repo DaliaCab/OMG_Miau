@@ -7,7 +7,7 @@
     padding: 50px 20px;
     background-color: #E5EEFF;
     flex-wrap: wrap;
-    height: 80vh; /* Ajustar la altura según lo necesites */
+    height: 700px; /* Ajustar la altura según lo necesites */
 }
 
 .text-and-buttons {
@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 30px;
+    height: -20px;
 }
 
 .cat-image img {
